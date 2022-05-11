@@ -34,3 +34,27 @@ router.get('/new', withAuth, (req, res) => {
     layout: 'dashboard',
   });
 });
+// WHEN WE CLICK ON THE POST ITSELF
+router.get('/edit/:id', withAuth, async (req, res) => {
+    try {
+      // what should we pass here? we need to get some data passed via the request body -DONE!
+      const postData = await Post.findByPk(req.params.id);
+  
+      if (postData) {
+        // serializing the data
+        const post = postData.get({ plain: true });
+        console.log(post);
+        // which view should we render if we want to edit a post?
+        res.render('edit-post', {
+          layout: 'dashboard',
+          post,
+        });
+      } else {
+        res.status(404).end();
+      }
+    } catch (err) {
+      res.redirect('login');
+    }
+  });
+  
+  module.exports = router;
