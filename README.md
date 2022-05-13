@@ -15,8 +15,8 @@ Please find below my Heroku link.
 ["TechBlog-D"](https://serene-eyrie-77030.herokuapp.com/)
 
 ## Gif Demo
-In case Video is not working for you,find below a gif to my homework!
-["TechBlog-D GIF"](./Demo/readme-generator-video-demo.gif)
+Find below a gif to my homework!
+["TechBlog-D GIF"](./demo/May-12-2022%2022-26-36.gif)
 
 
 
@@ -24,7 +24,7 @@ In case Video is not working for you,find below a gif to my homework!
 
 
 
-!["TechBlog-D GIF"](./Demo/readme-generator-video-demo.gif)
+!["TechBlog-D GIF"](./demo/May-12-2022%2022-26-36.gif)
 
 ## Github Repo
 Click on the link below to find the link to my repo!
